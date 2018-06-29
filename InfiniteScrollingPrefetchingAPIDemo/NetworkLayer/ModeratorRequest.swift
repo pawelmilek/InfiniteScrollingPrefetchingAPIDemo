@@ -18,7 +18,7 @@ struct ModeratorRequest: WebServiceRequest {
 }
 
 
-// MARK: - Get moderators
+// MARK: - Factory method
 extension ModeratorRequest {
   
   static func make(from site: String, at page: Int = 1) -> ModeratorRequest {

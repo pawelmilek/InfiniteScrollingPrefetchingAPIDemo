@@ -23,7 +23,8 @@ extension Moderator {
     let formatter = NumberFormatter()
     formatter.numberStyle = NumberFormatter.Style.decimal
     
-    return formatter.string(for: reputationScore) ?? String(reputationScore)
+    let formattedScore = formatter.string(for: reputationScore) ?? String(reputationScore)
+    return formattedScore + " ⭐️"
   }
   
 }

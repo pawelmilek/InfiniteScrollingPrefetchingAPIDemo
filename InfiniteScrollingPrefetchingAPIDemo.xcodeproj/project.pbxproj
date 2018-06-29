@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7136569244E1C534C9656C0E /* Pods_InfiniteScrollingPrefetchingAPIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0967CB5DE8B19D2ABD406951 /* Pods_InfiniteScrollingPrefetchingAPIDemo.framework */; };
 		E20BEBCD20E1D6070097837E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BEBCC20E1D6070097837E /* AppDelegate.swift */; };
 		E20BEBCF20E1D6070097837E /* ModeratorSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BEBCE20E1D6070097837E /* ModeratorSearchViewController.swift */; };
 		E20BEBD220E1D6070097837E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20BEBD020E1D6070097837E /* Main.storyboard */; };
@@ -38,6 +39,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0967CB5DE8B19D2ABD406951 /* Pods_InfiniteScrollingPrefetchingAPIDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfiniteScrollingPrefetchingAPIDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39CA06539B41F24AF9254AE9 /* Pods-InfiniteScrollingPrefetchingAPIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollingPrefetchingAPIDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InfiniteScrollingPrefetchingAPIDemo/Pods-InfiniteScrollingPrefetchingAPIDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4E232563357F968469066452 /* Pods-InfiniteScrollingPrefetchingAPIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollingPrefetchingAPIDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-InfiniteScrollingPrefetchingAPIDemo/Pods-InfiniteScrollingPrefetchingAPIDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E20BEBC920E1D6070097837E /* InfiniteScrollingPrefetchingAPIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScrollingPrefetchingAPIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20BEBCC20E1D6070097837E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E20BEBCE20E1D6070097837E /* ModeratorSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeratorSearchViewController.swift; sourceTree = "<group>"; };
@@ -75,17 +79,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7136569244E1C534C9656C0E /* Pods_InfiniteScrollingPrefetchingAPIDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C462C8E5D3FB2BCEDBD792BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0967CB5DE8B19D2ABD406951 /* Pods_InfiniteScrollingPrefetchingAPIDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E20BEBC020E1D6070097837E = {
 			isa = PBXGroup;
 			children = (
 				E20BEBCB20E1D6070097837E /* InfiniteScrollingPrefetchingAPIDemo */,
 				E20BEBCA20E1D6070097837E /* Products */,
+				FC4EB6591FBAFEBDCFCFC530 /* Pods */,
+				C462C8E5D3FB2BCEDBD792BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,9 +115,9 @@
 		E20BEBCB20E1D6070097837E /* InfiniteScrollingPrefetchingAPIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E20BEBDE20E1D61C0097837E /* Application */,
 				E20BEBF320E310FB0097837E /* NetworkLayer */,
 				E20BEBF120E306220097837E /* SegueIdentifierType.swift */,
-				E20BEBDE20E1D61C0097837E /* Application */,
 				E20BEBE520E1D6620097837E /* Protocols */,
 				E20BEBE420E1D65C0097837E /* Extensions */,
 				E20BEBE320E1D6570097837E /* View */,
@@ -175,7 +190,6 @@
 			children = (
 				E20BEC0F20E318950097837E /* UIView+ReusableView.swift */,
 				E20BEC1720E444F30097837E /* UIColor+Palette.swift */,
-				E20BEC0D20E318880097837E /* ReusableView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -183,6 +197,7 @@
 		E20BEBE520E1D6620097837E /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				E20BEC0D20E318880097837E /* ReusableView.swift */,
 				E20BEBEF20E305CE0097837E /* ViewSetupable.swift */,
 			);
 			path = Protocols;
@@ -237,6 +252,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		FC4EB6591FBAFEBDCFCFC530 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39CA06539B41F24AF9254AE9 /* Pods-InfiniteScrollingPrefetchingAPIDemo.debug.xcconfig */,
+				4E232563357F968469066452 /* Pods-InfiniteScrollingPrefetchingAPIDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E20BEBDB20E1D6090097837E /* Build configuration list for PBXNativeTarget "InfiniteScrollingPrefetchingAPIDemo" */;
 			buildPhases = (
+				CD77E5645E71236C2CB085B4 /* [CP] Check Pods Manifest.lock */,
 				E20BEBC520E1D6070097837E /* Sources */,
 				E20BEBC620E1D6070097837E /* Frameworks */,
 				E20BEBC720E1D6070097837E /* Resources */,
+				2477C35DB4B0C0B0F95B8AB0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -303,6 +329,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2477C35DB4B0C0B0F95B8AB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-InfiniteScrollingPrefetchingAPIDemo/Pods-InfiniteScrollingPrefetchingAPIDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InfiniteScrollingPrefetchingAPIDemo/Pods-InfiniteScrollingPrefetchingAPIDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD77E5645E71236C2CB085B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InfiniteScrollingPrefetchingAPIDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E20BEBC520E1D6070097837E /* Sources */ = {
@@ -474,6 +539,7 @@
 		};
 		E20BEBDC20E1D6090097837E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39CA06539B41F24AF9254AE9 /* Pods-InfiniteScrollingPrefetchingAPIDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -492,6 +558,7 @@
 		};
 		E20BEBDD20E1D6090097837E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E232563357F968469066452 /* Pods-InfiniteScrollingPrefetchingAPIDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
